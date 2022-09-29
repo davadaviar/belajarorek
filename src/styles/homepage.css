@@ -1,0 +1,231 @@
+@import "app.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--text-body);
+    box-sizing: border-box;
+}
+
+/* Start : Navbar */
+
+.navbar {
+   align-items: center;
+   padding: 12px 50px;
+   width: 100%;
+   z-index: 5;
+}
+
+.navbar-brand {
+    font-weight: var(--text-semibold);
+    font-size: var(--text-heading-xs);
+}
+
+.nav-link {
+    font-size: var(--text-paragraph);
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.btn-login {
+    background-color: var(--neutral-100);
+    color: var(--primary-color);
+    font-weight: var(--text-semibold);
+    padding: 8px 30px;
+    transition: 0.5s;
+    border-radius: var(--rounded-full);
+}
+
+.btn-login:hover {
+    border: solid 2px var(--neutral-100);
+    color: var(--text-white);
+}
+
+.btn-login:focus {
+    border: solid 2px var(--neutral-100);
+    color: var(--text-white);
+}
+
+.nav-link {
+    color: var(--text-white);
+}
+
+/* End : Navbar */
+
+/* Start : Hero Section */
+#hero__section img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 1;
+    top: 0;
+}
+
+#hero__section h1 {
+    font-size: var(--text-heading-l);
+    font-weight: var(--text-semibold);
+    color: var(--text-white);
+}
+
+#hero__section p {
+    font-size: var(--text-paragraph);
+    margin-top: 30px;
+    color: var(--text-white);
+}
+
+.banner-img > img {
+    width: 500px;
+    height: 720px;
+    border-radius: 0 120px 0 120px;
+}
+
+.btn-selengkapnya {
+    font-size: var(--text-paragraph);
+    margin-top: 2em;
+    padding: 10px 30px;
+    border-radius: var(--rounded-full);
+}
+
+.hero-title {
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    width: 100%;
+    margin: 0.2em auto;
+    z-index: 2;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 20%, #000000 150%);
+    z-index: 3;
+}
+
+/* End : Hero Section */
+
+/* Start : Detail Belajarorek */
+
+#detail__belajarorek {
+    padding: 4em;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5em;
+    align-items: center;
+    margin-top: 8em;
+}
+
+#detail__belajarorek h2 {
+    font-size: 40px;
+    font-weight: var(--text-semibold);
+    color: var(--neutral-900);
+}
+
+#detail__belajarorek p {
+    font-size: var(--text-paragraph);
+    color: var(--neutral-500);
+    margin-top: 1em;
+}
+
+.content-banner {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.divider {
+    color: var(--neutral-600);
+    margin: 30px 0 50px 0;
+}
+
+/* End : Detail Belajarorek */
+
+/* Start : Isi Belajarorek */
+
+#isi__belajarorek {
+    padding: 4em;
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#isi__belajarorek > section > .divider {
+    width: 700px;
+}
+
+#isi__belajarorek h2 {
+    font-size: 40px;
+    font-weight: var(--text-semibold);
+    color: var(--neutral-900);
+}
+
+#isi__belajarorek p {
+    font-size: var(--text-paragraph);
+    color: var(--neutral-500);
+    margin-top: 1em;
+}
+
+.container-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.point-item {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.point-item > img {
+    width: 30px;
+    height: 100%;
+}
+
+/* End : Isi Belajarorek */
+
+/* Start : Registration */
+.registration {
+    background-color: var(--neutral-200);
+    padding: 2em;
+    border-radius: var(--rounded-xs);
+    margin-top: 8em;
+}
+
+.registration > h3 {
+    font-size: var(--text-heading-s);
+    font-weight: var(--text-semibold);
+    color: var(--neutral-900);
+}
+
+.registration > p {
+    font-size: var(--text-paragraph);
+    color: var(--neutral-600);
+}
+
+.btn-daftar {
+    border-radius: var(--rounded-full);
+    padding: 16px 32px;
+}
+/* End : Registration */
+
+/*  Start : footer  */
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    margin-top: 10em;
+}
+
+footer > p {
+    margin: 0;
+}
+
+/*  End : footer  */

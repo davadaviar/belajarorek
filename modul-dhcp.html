@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/library/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="src/styles/moduldhcp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Konfigurasi DHCP</title>
+</head>
+<body>
+
+    <!-- Start : Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary position-fixed top-0 shadow">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">Belajarorek</a>
+                <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="#navbarDropdown">
+                    <ul class="navbar-nav gap-lg-5">
+                        <li class="nav-item">
+                            <a href="dashboard.html" class="nav-link">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="btn btn-login" type="submit">Keluar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End : Navbar -->
+
+    <!-- Start : Modul Body -->
+    <div class="container-fluid modul-body">
+        <h1>Konfigurasi DHCP</h1>
+        <p>
+            DHCP kepanjangan dari Dynamic Host Configuration Protocol. DHCP adalah protokol yang dipakai untuk memudahkan penyebaran alamat IP (internet protocol) secara otomatis ke perangkat lainnya. 
+        </p>
+
+        <p>
+            IP Address atau alamat IP sendiri adalah barisan angka pada sebuah perangkat yang memungkinkan perangkat Anda terhubung dengan Internet. Sehingga Anda dapat mengakses halaman web, email, dan lainnya. 
+        </p>
+
+        <p>
+            Berikut langkah - langkah untuk menginstall dan mengkonfigurasikan DHCP server melalui Debian di Virtual Box :
+        </p>
+
+        <div class="img-container">
+            <img src="public/images/contents/dhcp-1.png" alt="">           
+        </div>
+
+        <p>
+            Untuk langkah awal lakukan login sebagai user pada Debian yang sebelumnya sudah diinstall sebelumnya. Seperti gambar di atas. Gunakan username dan password yang sudah dibuat sebelumnya. Untuk password memang hanya terlihat garis yang berkedip namun itu bukan masalah dan tetap ketik password yang sudah dibuat. Kemudian tekan enter.
+        </p>
+
+        <div class="img-container">
+            <img src="public/images/contents/dhcp-2.png" alt="">           
+        </div>
+
+        <p>
+            Setelah masuk dengan akun user, maka tuliskan perintah <span class="command">$ su</span> agar masuk menjadi user root dan ketik password lagi lalu tekan enter.
+        </p>
+
+        <div class="img-container">
+            <img src="public/images/contents/dhcp-3.png" alt="">           
+        </div>
+
+        <p>
+            Selanjutnya, menginstall paket DHCP server, dengan menggunakan perintah apt <span class="command">install isc-dhcp-server</span>. Setelah tampilan seperti gambar di atas tekan <span class="command">Y</span> lalu enter.
+        </p>
+
+        <div class="img-container">
+            <img src="public/images/contents/dhcp-4.png" alt="">           
+        </div>
+
+        <div class="img-container">
+            <img src="public/images/contents/dhcp-5.png" alt="">           
+        </div>
+
+        <p>
+            Kemudian tunggu proses seperti gambar di atas. Proses di atas membutuhkan waktu beberapa menit dan kecepatan proses tersebut bergantung dengan penuh atau tidaknya storage pada komputer atau jaringan internet yang digunakan. Karena kita belum mengatur IP Address dan kebutuhan lainnya sehingga status DHCP Server masih failed.
+        </p>
+
+        <div class="img-container">
+            <img src="public/images/contents/dhcp-6.png" alt="">           
+        </div>
+
+        <p>
+            Ketikkan perintah <span class="command">nano /etc/network/interfaces</span> untuk membuat custom IP address dan subnetmask. Usahakan untuk mengikuti persis seperti yang ada pada gambar di atas guna menghindari error. Dan edit seperti di bawah.
+        </p>
+
+        <div class="img-container">
+            <img src="public/images/contents/dhcp-7.png" alt="">           
+        </div>
+
+        <p>
+            Jika sudah diedit seperti gambar di atas maka simpan dengan tekan <span class="command">CTRL + X</span> lalu tekan <span class="command">Y</span> lalu tekan enter. Lalu lanjut ke tahapan selanjutnya sebagai berikut.
+        </p>
+
+        <div class="note-block shadow-sm">
+            <p>
+                Perhatikan banyaknya spasi atau pun tab yang ada karena untuk menghindari error ketika menuliskan sebuah perintah karena command yang dituliskan bersifat case sensitive.
+            </p>
+        </div>
+
+        <div class="img-container">
+            <img src="public/images/contents/dhcp-8.png" alt="">           
+        </div>
+    
+        <p>
+            Setelah tersimpan dan tampilan seperti pada gambar di atas, ketikkan <span class="command">nano /etc/init.d/networking restart</span> lalu tekan enter. Dan tunggu hingga proses selesai.
+        </p>
+
+        <div class="img-container">
+            <img src="public/images/contents/dhcp-10.png" alt="">           
+        </div>
+    
+        <p>
+            Setelah tersimpan dan tampilan seperti pada gambar di atas, ketikkan <span class="command">nano /etc/init.d/networking restart</span> lalu tekan enter.
+        </p>
+
+        <div class="img-container">
+            <img src="public/images/contents/dhcp-12.png" alt="">           
+        </div>
+    
+        <p>
+            Setelah proses selesai seperti pada gambar di atas, ketikkan <span class="command">apt-get install isc-dhcp-server</span> lalu tekan enter.
+        </p>
+
+        <div class="img-container">
+            <img src="public/images/contents/dhcp-13.png" alt="">           
+        </div>
+    
+        <p>
+            Kemudian ketikkan perintah seperti berikut untuk mekonfigurasi <span class="command">nano /etc/dhcp/dhcpd.conf</span> lalu tekan enter.
+        </p>
+
+        <div class="img-container">
+            <img src="public/images/contents/dhcp-14.png" alt="">           
+        </div>
+    
+        <p>
+            Ketika muncul tampilan seperti pada gambar di atas, maka untuk tulisan biru berarti perintah tersebut tidak aktif sedangkan untuk mengaktifkannya hanya perlu menghapus tanda pagar "#". Untuk cara cepat menemukan perintah seperti pada gambar maka ketikkan seperti berikut <span class="command">CTRL + W</span> lalu ketikkan <span class="command">sli</span> lalu tekan enter dan edit IP address dan kebutuhan lainnya seperti pada gambar. Untuk menyimpannya tekan <span class="command">CTRL + X</span> lalu tekan <span class="command">Y</span> lalu tekan enter.
+        </p>
+
+        <div class="img-container">
+            <img src="public/images/contents/dhcp-15.png" alt="">           
+        </div>
+    
+        <p>
+            Setelah tersimpan lalu ketikkan perintah selanjutnya sebagai berikut <span class="command">nano /etc/default/isc-dhcp-server</span> lalu tekan enter.
+        </p>
+
+        <div class="img-container">
+            <img src="public/images/contents/dhcp-16.png" alt="">           
+        </div>
+    
+        <p>
+            Edit konfigurasinya seperti gambar di atas yaitu menggunakan <span class="command">enp0s3</span> jika sudah lalu simpan dengan tekan <span class="command">CTRL + X</span> lalu tekan <span class="command">Y</span> lalu tekan enter.
+        </p>
+
+        <div class="img-container">
+            <img src="public/images/contents/dhcp-17.png" alt="">           
+        </div>
+    
+        <p>
+            Lalu restart DHCP server dengan perintah berikut <span class="command">nano /etc/init.d/isc-dhcp-server restart</span> lalu tekan enter.
+        </p>
+
+        <div class="img-container">
+            <img src="public/images/contents/dhcp-18.png" alt="">           
+        </div>
+    
+        <p>
+            Tunggu proses selesai dan lihat status DHCP Server menjadi active seperti gambar di bawah.
+        </p>
+
+        <div class="img-container">
+            <img src="public/images/contents/dhcp-19.png" alt="">           
+        </div>
+    </div>
+
+
+    <a 
+            href="https://www.notion.so/davdadaviar/32e7e86b346947ddb126f58e844a847a" 
+            target="_blank"
+            class="note-bubble shadow"    
+        >
+            <i class="fa fa-book fa-2x note-icon"></i>
+            <p>Catat agar tidak lupa</p>
+        </a>
+
+    <!-- End : Modul Body -->
+
+    <!-- Start : Pagination -->
+    <div class="pagination justify-content-between">
+        <a href="modul-install-debian.html" class="btn btn-secondary btn-previous">Sebelumnya</a>
+        <a href="#" class="btn btn-primary btn-next">Selanjutnya</a>
+    </div>
+    <!-- End : Pagination -->
+   
+    
+    <script src="src/library/jquery/jquery-3.6.0.min.js"></script>
+    <script src="src/library/bootstrap/js/bootstrap.js"></script>
+    <script src="src/scripts/smoothScrollAnchor.js"></script>
+</body>
+</html>

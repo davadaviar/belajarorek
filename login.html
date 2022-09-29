@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/library/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="src/styles/loginpage.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="login-form">
+      <!-- Start : Banner Login -->
+      <div class="banner-login">
+        <img src="public/images/designs/login-banner.jpg" alt="banner-login">
+      </div>
+      <!-- End : Banner Login -->
+  
+      <!-- Start : Login Form -->
+      <div class="login">
+        <form class="shadow form-login">
+            <div class="form-container">
+                <h2 class="text-center mb-5">Login</h2>
+                <div class="mb-3">
+                    <label for="" class="form-label">Email</label>
+                    <input
+                        type="email" 
+                        class="form-control shadow-sm" 
+                        name="email"
+                        id="inputEmail"
+                        placeholder="Masukkan emailmu di sini"
+                    >
+                  </div>
+                  <div class="mb-5">
+                    <label for="" class="form-label">Password</label>
+                    <input 
+                        type="password" 
+                        class="form-control shadow-sm" 
+                        name="password"
+                        id="inputPassword"
+                        placeholder="Masukkan passwordmu di sini"
+                    >
+                  </div>
+    
+                  <div class="d-grid gap-3 mb-4">
+                    <a href="#" type="submit" class="btn btn-primary btn-lg btn-login block shadow">Login</a>
+                    <hr>
+                    <a href="daftar.html" class="btn btn-outline-secondary btn-lg btn-register block shadow-sm">Daftar</a>
+                  </div>
+            </div>
+        </form>
+      </div>
+      <!-- End : Login Form -->
+    </div>
+
+    
+    <script src="src/library/jquery/jquery-3.6.0.min.js"></script>
+    <script src="src/library/bootstrap/js/bootstrap.js"></script>
+    <script src="src/scripts/login.js"></script>
+</body>
+</html>

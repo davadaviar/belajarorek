@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+
+    /* Primary Color */
+    --primary-color : #0d6efd;
+
+    /* Background Color */
+    --bg-color : #f2f2f2;
+
+    /* Text Color */
+    --neutral-100 : #f8f9fa;
+    --neutral-200 : #e9ecef;
+    --neutral-300 : #dee2e6;
+    --neutral-400 : #ced4da;
+    --neutral-500 : #adb5bd;
+    --neutral-600 : #6c757d;
+    --neutral-700 : #495057;
+    --neutral-800 : #343a40;
+    --neutral-900 : #212529;
+    --text-white : #ffffff;
+
+    /* Semantic Color */
+    --danger : #FF4A4A;
+    --success : #2dc653;
+
+    /* Font Property */
+    --text-body : 'Quicksand', sans-serif;
+    --text-heading-2xl : 80px;
+    --text-heading-xl : 70px;
+    --text-heading-l : 60px;
+    --text-heading-m : 50px;
+    --text-heading-s : 40px;
+    --text-heading-xs : 30px;
+    --text-heading-2xs : 20px;
+    --text-paragraph : 20px;
+    --text-paragraph-m : 18px
+    --text-paragraph-sm : 16px
+    --text-thin : 300;
+    --text-regular : 400;
+    --text-medium : 500;
+    --text-semibold : 600;
+    --text-bold : 700;
+    --line-height-default : 1.8em;
+
+    /* Border Radius */
+    --rounded-2xs : 10px;
+    --rounded-xs : 14px;
+    --rounded-s : 18px;
+    --rounded-m : 24px;
+    --rounded-l : 28px;
+    --rounded-xl : 32px;
+    --rounded-2xl : 36px;
+    --rounded-full : 50px;
+}

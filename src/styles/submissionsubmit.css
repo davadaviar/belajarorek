@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import "./app.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--text-body);
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.close-icon {
+    position: absolute;
+    right: 2em;
+    color: var(--neutral-500);
+}
+
+.divider {
+    color: var(--neutral-600);
+    top: 50px;
+    position: relative;
+}
+
+.close-icon:hover {
+    cursor: pointer;
+    color: var(--neutral-600);
+}
+
+.submit-container {
+    margin-top: 6em;
+    padding: 4em;
+}
+
+.submit-container > h4 {
+    margin-bottom: 50px;
+    font-size: var(--text-heading-s);
+}
+
+.submit-field {
+    border: 2px solid var(--neutral-500);
+    padding: 30px;
+    border-radius: var(--rounded-s);
+}
+
+.btn-submit {
+    width: 150px;
+    margin: 50px auto;
+    font-weight: var(--text-medium);
+    border-radius: var(--rounded-full);
+}
+
+/* Start : Modal */
+
+.modal-window {
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    transition: 0.3s ease-in-out;
+}
+
+.modal-wrapper {
+    position: relative;
+    margin: 10% auto;
+    width: 30%;
+    background-color: var(--neutral-100);
+    padding: 30px;
+    border-radius: var(--rounded-m);
+}
+
+.icon-check {
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.modal-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header > h4 {
+    font-size: var(--text-heading-xs);
+    font-weight: var(--text-semibold);
+    color: var(--neutral-900);
+}
+
+.modal-body > p {
+    font-size: var(--text-paragraph);
+    color: var(--neutral-600);
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+.btn-dashboard {
+    border-radius: var(--rounded-full);
+    width: 150px;
+    font-weight: var(--text-medium);
+}
+
+/* End : Modal */

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import "app.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--text-body);
+    box-sizing: border-box;
+}
+
+body {
+   background-color: var(--bg-color);
+}
+
+/* Start : Register */
+
+.register-form {
+    display: flex;
+
+}
+
+.banner-register > img {
+    width: 700px;
+    height: 100vh;
+}
+
+/* End : Register */
+
+
+/* Start : Login Page */
+.register {
+    width: 100%;
+}
+
+form {
+    width: 50%;
+    margin: 3% auto;
+    border: 2px solid #f1f1f1;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: white;
+    border-radius: var(--rounded-s);
+}
+
+.form-control {
+    padding: 12px 20px;
+    border-radius: var(--rounded-full);
+}
+
+.btn-register {
+    border-radius: var(--rounded-full);
+}
+
+.btn-login {
+    border-radius: var(--rounded-full);
+}
+
+/* End : Login Page */

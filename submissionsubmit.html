@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/library/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="src/styles/submissionsubmit.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Submission Submit</title>
+</head>
+<body>
+
+    <!-- Start : Header -->
+    <header>
+        <div class="container-header">
+            <i class="fa fa-times fa-2x close-icon"></i>
+            <hr class="divider shadow">
+        </div>
+    </header>
+    <!-- Start : Header -->
+
+    <!-- Start : Submission Submit Field -->
+    <div class="submit-container">
+        <h4>Unggah Project</h4>
+        <div class="submit-field">
+            <input type="file" name="projectInput" id="projectInput">
+        </div>
+        <button class="btn btn-primary btn-lg btn-submit shadow-sm">Kumpulkan</button>
+    </div>
+    <!-- End : Submission Submit Field -->
+
+    <!-- Start : Modal -->
+    <div class="modal-window">
+        <div class="modal-wrapper text-center shadow">
+            <div class="modal-header">
+                <i class="fa fa-check-circle fa-5x icon-check"></i>
+                <h4>Yeayy, Projectmu telah dikumpulkan</h4>
+            </div>
+            <div class="modal-body">
+                <p>Check status project yang telah kamu kumpulkan di dashboardmu</p>
+                <a href="dashboard.html" class="btn btn-primary btn-lg btn-dashboard shadow-sm">Dashboard</a>
+            </div>
+        </div>
+    </div>
+    <!-- End : Modal -->
+   
+    
+    <script src="src/library/jquery/jquery-3.6.0.min.js"></script>
+    <script src="src/library/bootstrap/js/bootstrap.js"></script>
+    <script src="src/scripts/closeBtn.js"></script>
+    <script src="src/scripts/submitBtn.js"></script>
+</body>
+</html>

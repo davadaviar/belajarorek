@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/library/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/styles/mapel.css">
+    <title>Mapel</title>
+</head>
+<body>
+     <!-- Start : Navbar -->
+     <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary position-fixed top-0 shadow">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">Belajarorek</a>
+                <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="#navbarDropdown">
+                    <ul class="navbar-nav gap-lg-5">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Tentang</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="btn btn-login" type="submit">Keluar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End : Navbar -->
+
+    <!-- Start : Banner -->
+    <div class="container-fluid banner-mapel justify-content-between">
+        <div class="title-mapel">
+            <img src="public/images/designs/kelasXI.jpg" class="mapel-img-banner" alt="kelas-x" width="300px">
+            <div class="title">
+                <div class="mapel-head">
+                    <h1>Mata Pelajaran Kelas XI</h1>
+                </div>
+                <div class="mapel-body">
+                    <p>Berikut mata pelajaran kelas XI yang harus ditempuh oleh peserta didik</p>
+                </div>
+                <div class="modul-chapter">
+                    <p>3 Mapel  |  40 Modul</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End : Banner -->
+
+    <!-- Start : Mapel Container -->
+    <div class="conainer-fluid mapel-container">
+        
+        <!-- Start : Mapel Card 1 -->
+       <div class="accordion p-4 mb-4 shadow-sm">
+            <div class="detail-modul">
+                <h5>Administrasi Sistem Jaringan</h5>
+                <p>5 Modul</p>
+            </div>
+       </div>
+       <div class="panel px-4 pt-3 pb-4 mb-4 shadow-sm">
+            <ul class="chapter-list">
+                <li><a href="modul-install-debian.html">Instalasi Debian</a></li>
+                <li><a href="modul-dhcp.html">Konfigurasi IP Address</a></li>
+                <li><a href="#">Konfigurasi DHCP Server</a></li>
+                <li><a href="#">Konfigurasi FTP Server</a></li>
+                <li><a href="#">Konfigurasi Mail Server</a></li>
+                <li><a href="submission.html">Project Akhir Siswa</a></li>
+            </ul>
+       </div>
+       <!-- End : Mapel Card 1 -->
+
+       <!-- Start : Mapel Card 2 -->
+       <div class="accordion p-4 mb-4 shadow-sm">
+            <div class="detail-modul">
+                <h5>Administrasi Sistem Jaringan</h5>
+                <p>5 Modul</p>
+            </div>
+       </div>
+       <div class="panel px-4 pt-3 pb-4 mb-4 shadow-sm">
+            <ul class="chapter-list">
+                <li><a href="#">Instalasi Debian</a></li>
+                <li><a href="#">Konfigurasi IP Address</a></li>
+                <li><a href="#">Konfigurasi DHCP Server</a></li>
+                <li><a href="#">Konfigurasi FTP Server</a></li>
+                <li><a href="#">Konfigurasi Mail Server</a></li>
+            </ul>
+       </div>
+       <!-- End : Mapel Card 2 -->
+
+       <!-- Start : Mapel Card 3 -->
+       <div class="accordion p-4 mb-4 shadow-sm">
+            <div class="detail-modul">
+                <h5>Administrasi Sistem Jaringan</h5>
+                <p>5 Modul</p>
+            </div>
+       </div>
+       <div class="panel px-4 pt-3 pb-4 mb-4 shadow-sm">
+            <ul class="chapter-list">
+                <li><a href="#">Instalasi Debian</a></li>
+                <li><a href="#">Konfigurasi IP Address</a></li>
+                <li><a href="#">Konfigurasi DHCP Server</a></li>
+                <li><a href="#">Konfigurasi FTP Server</a></li>
+                <li><a href="#">Konfigurasi Mail Server</a></li>
+            </ul>
+       </div>
+       <!-- End : Mapel Card 3 -->
+
+    </div>
+    <!-- End : Mapel Container -->
+
+    <!-- Start : Footer -->
+    <footer>
+        <p class="text-center align-items-center">Copyright Allright Reserved by PLP SMKN 7 Surabaya | 2022</p>
+    </footer>
+    <!-- End : Footer -->
+   
+    
+    <script src="src/library/jquery/jquery-3.6.0.min.js"></script>
+    <script src="src/library/bootstrap/js/bootstrap.js"></script>
+    <script src="src/scripts/accordion.js"></script>
+</body>
+</html>

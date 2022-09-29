@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import "app.css";
+
+* {
+    font-family: var(--text-body);
+    box-sizing: border-box;
+}
+
+/* Start : Navbar */
+
+.navbar {
+    align-items: center;
+    padding: 10px 50px;
+    width: 100%;
+ }
+ 
+ .navbar-brand {
+     font-weight: var(--text-semibold);
+     font-size: var(--text-heading-xs);
+ }
+ 
+ .btn-login {
+     background-color: var(--neutral-100);
+     color: var(--primary-color);
+     font-weight: var(--text-semibold);
+     padding: 6px 20px;
+     transition: 0.5s;
+     border-radius: var(--rounded-full);
+ }
+ 
+ .btn-login:hover {
+     border: solid 2px var(--neutral-100);
+     color: var(--text-white);
+ }
+ 
+ .btn-login:focus {
+     border: solid 2px var(--neutral-100);
+     color: var(--text-white);
+ }
+ 
+ .nav-link {
+     color: var(--text-white);
+ }
+ 
+/* End : Navbar */
+
+
+/*  Start : Modul-body */
+
+ .modul-body {
+    margin-top: 5em;
+    padding: 4em;
+ }
+
+ .modul-body h1 {
+    font-weight: var(--text-semibold);
+    color: var(--neutral-900);
+    margin-bottom: 40px;
+ }
+
+ .modul-body p {
+    font-size: var(--text-paragraph);
+    color: var(--neutral-600);
+    text-align: justify;
+    line-height: var(--line-height-default)
+ }
+
+/* Start : Video-container */
+.video-container {
+    text-align: center;
+}
+
+.video-template {
+    margin: 50px 0 50px 0;
+    border-radius: 14px;
+}
+/* End : Video-container */
+
+/* Start : Img-container */
+.img-container {
+    text-align: center;
+    margin: 50px 0 50px 0;
+}
+
+.img-container > img {
+    width: 1000px;
+    border: 2px solid var(--neutral-400);
+    border-radius: var(--rounded-xs);
+}
+
+/* End : Img-container */
+
+.note-bubble {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: var(--neutral-100);
+    width: 240px;
+    border: 1px solid var(--neutral-400);
+    border-radius: 8px;
+    position: fixed;
+    right: 4em;
+    bottom: 8em;
+    z-index: 4;
+    border-radius: var(--rounded-s);
+}
+
+.note-icon {
+    color: var(--neutral-800);
+}
+
+.note-bubble:hover {
+    cursor: pointer;
+}
+
+.note-bubble > p {
+    margin-bottom: 0;
+    font-size: var(--text-paragraph-m);
+}
+
+.note-block {
+    padding: 10px 30px;
+    background-color: var(--neutral-100);
+    margin-bottom: 10em;
+    border-left: 8px solid var(--primary-color);
+    border-radius: 6px;
+}
+
+.note-block > p {
+    margin-bottom: 0;
+}
+
+
+/* Start : Pagination */
+.pagination {
+    display: flex;
+    padding: 1.5em 4em;
+    background-color: var(--neutral-200);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.btn-previous {
+    border-radius: var(--rounded-m);
+    padding: 8px 15px;
+}
+
+.btn-next {
+    border-radius: var(--rounded-m);
+    padding: 8px 15px;
+}
+/* End : Pagination */
+
+/*  End : Modul-body */

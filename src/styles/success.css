@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import "./app.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--text-body);
+}
+
+body {
+    background-color: var(--bg-color);
+ }
+
+.success-banner > img {
+    width: 400px;
+    border-radius: var(--rounded-m);
+}
+
+.success-banner {
+    text-align: center;
+    margin-top: 8%;
+}
+
+.success-body h1 {
+    font-size: var(--text-heading-s);
+    font-weight: var(--text-semibold);
+}
+
+.success-body p {
+    font-size: var(--text-paragraph);
+    color: var(--neutral-600);
+}
+
+.btn-login {
+    width: 200px;
+    font-weight: var(--text-medium);
+    border-radius: var(--rounded-full);
+}
+
+.line-horizontal-left {
+    color: var(--primary-color);
+    width: 400px;
+    height: 2px;
+    position: relative;
+    left: 4em;
+    top: -25em;
+}
+
+.line-vertical-left {
+    position: absolute;
+    color: var(--primary-color);
+    width: 400px;
+    height: 2px;
+    left: -4em;
+    top: 10em;
+    transform: rotate(90deg);
+}
+
+.line-horizontal-right {
+    color: var(--primary-color);
+    width: 400px;
+    height: 2px;
+    position: relative;
+    top: -20em;
+}
+
+.line-vertical-right {
+    position: absolute;
+    color: var(--primary-color);
+    width: 400px;
+    height: 2px;
+    right: -8em;
+    top: -15em;
+    transform: rotate(90deg);
+}
+
+.line-decoration-right {
+    position: absolute;
+    right: 4em;
+}

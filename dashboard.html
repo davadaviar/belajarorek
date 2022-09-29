@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/library/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="src/styles/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Dashboard</title>
+</head>
+<body>
+
+    <!-- Start : Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary position-fixed top-0 shadow">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">Belajarorek</a>
+                <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="#navbarDropdown">
+                    <ul class="navbar-nav gap-lg-5">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Tentang</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="btn btn-login shadow" type="submit">Keluar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End : Navbar -->
+
+    <!-- Start : Banner -->
+    <div class="banner justify-content-between align-items-center">
+        <div class="greeting">
+            <h3>Selamat Datang, Dava Daviar Saputra</h3>
+            <p>Semoga aktivitas belajarmu menyenangkan</p>
+        </div>
+        <div class="notification">
+            <i class="fa fa-envelope fa-2x"></i>
+            <div class="circle"></div>
+        </div>
+    </div>
+    <!-- End : Banner -->
+
+    <!-- Start : Slider Notification -->
+    <div class="notif-slider">
+        <div class="notification-wrapper shadow">
+            <div class="notif-head justify-content-between align-items-center">
+                <h5>Notifikasi</h5>
+                <i class="fa fa-times close-btn"></i>
+            </div>
+            <hr>
+            <div class="card-notif-container">
+                <div class="card-notification pending justify-content-between align-items-center shadow-sm">
+                    <i class="fa fa-file-archive-o fa-2x icon-img"></i>
+                    <div class="notif-desc">
+                        <h6>Project Akhir Administrasi Sistem Jaringan</h6>
+                        <p> Status : Sedang Direview</p>
+                    </div>
+                </div>
+                <div class="card-notification success justify-content-between align-items-center shadow-sm">
+                    <i class="fa fa-file-archive-o fa-2x icon-img"></i>
+                    <div class="notif-desc">
+                        <h6>Project Akhir Produk Kewirausahaan</h6>
+                        <p class="success"> Status : Telah Dinilai</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End : Slider Notification -->
+
+    <!-- Start : Finish Class & pilihan class -->
+        <div class="container-class class-option">
+            <div class="row justify-content-between mx-auto">
+                <div class="col-md-4 card card-kelas shadow" style="width: 25rem;" id="mapel__x">
+                    <img src="public/images/designs/kelasX.jpg" class="card-img-top mt-2" alt="kelas-x">
+                    <div class="card-body">
+                        <h4>Materi Kelas X</h4>
+                        <p>5 Mapel | 100 Modul</p>
+                    </div>
+                </div>
+                <div class="col-md-4 card card-kelas shadow" style="width: 25rem;" id="mapel__xi">
+                    <img src="public/images/designs/KelasXI.jpg" class="card-img-top mt-2" alt="kelas-xi">
+                    <div class="card-body">
+                        <h4>Materi Kelas XI</h4>
+                        <p>4 Mapel | 80 Modul</p>
+                    </div>
+                </div>
+                <div class="col-md-4 card card-kelas shadow" style="width: 25rem;" id="mapel__xii">
+                    <img src="public/images/designs/kelasXII.jpg" style="height: 248px;"  class="card-img-top mt-2" alt="kelas-xii">
+                    <div class="card-body">
+                        <h4>Materi Kelas XII</h4>
+                        <p>5 Mapel | 120 Modul</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- End : Finish Class & pilihan class -->
+
+    <!-- Start : Footer -->
+        <footer>
+            <p class="text-center align-items-center">Copyright Allright Reserved by PLP SMKN 7 Surabaya | 2022</p>
+        </footer>
+    <!-- End : Footer -->
+   
+    
+    <script src="src/library/jquery/jquery-3.6.0.min.js"></script>
+    <script src="src/library/bootstrap/js/bootstrap.js"></script>
+    <script src="src/scripts/mapel.js"></script>
+    <script src="src/scripts/notif.js"></script>
+</body>
+</html>
+</html>
