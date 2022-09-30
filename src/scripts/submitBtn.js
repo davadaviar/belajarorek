@@ -48,9 +48,5 @@ function openModal() {
         modal.append(modalWrapper);
 
         document.body.appendChild(modal);
-
-        modal.addEventListener("click", function() {
-            modal.style.display = "none";
-        })
     }
 }
