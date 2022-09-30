@@ -22,7 +22,7 @@ function openModal() {
         icon.classList.add("icon-check");
 
         const heading = document.createElement("h4");
-        heading.innerText = "Upps, ada yang salah";
+        heading.innerText = "Yeayy, tugasmu sudah dikumpulkan";
 
         modalHeader.append(icon, heading);
 
@@ -30,7 +30,7 @@ function openModal() {
         modalBody.classList.add("modal-body");
 
         const text = document.createElement("p");
-        text.innerText = "Mungkin ada email atau passwordmu yang tidak valid, ulangi sekali lagi.";
+        text.innerText = "Lihat status tugasmu pada halaman dashboardmu";
 
         const btn = document.createElement("a");
         btn.setAttribute("href", "dashboard.html");
