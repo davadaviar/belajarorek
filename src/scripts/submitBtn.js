@@ -9,5 +9,3 @@ function openModal() {
         modal.style.display = "block";
     }
 }
-
-module.exports = openModal;

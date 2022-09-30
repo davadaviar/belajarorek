@@ -40,7 +40,7 @@ form {
     border-radius: var(--rounded-s);
     background-color: white;
     position: relative;
-    z-index: 10;
+    z-index: 5;
 }
 
 .form-control {
@@ -55,6 +55,54 @@ form {
 .btn-register {
     border-radius: var(--rounded-full);
 }
+
+/* Start : Modal */
+
+.modal-window {
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+    z-index: 8;
+    display: block ;
+}
+
+.modal-wrapper {
+    position: relative;
+    margin: 12% auto;
+    width: 30%;
+    background-color: var(--neutral-100);
+    padding: 30px;
+    border-radius: var(--rounded-m);
+}
+
+.icon-cross {
+    margin-bottom: 30px;
+    color: var(--danger);
+}
+
+.modal-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header > h4 {
+    font-size: var(--text-heading-xs);
+    font-weight: var(--text-semibold);
+    color: var(--neutral-900);
+}
+
+.modal-body > p {
+    font-size: var(--text-paragraph);
+    color: var(--neutral-600);
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+/* End : Modal */
 
 /* End : Login Page */
 
