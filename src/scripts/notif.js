@@ -6,8 +6,8 @@ const notifBar = document.querySelector(".notif-slider")
 notifBtn.addEventListener("click", slideBar);
 
 function slideBar() {
-    const slideBar = document.querySelector(".notif-slider");
-    slideBar.style.transform = "translateX(0)";
+     const slideBar = document.querySelector(".notif-slider");
+     slideBar.style.transform = "translateX(0)";
 }
 
 closeBtn.addEventListener("click", closeBar);
