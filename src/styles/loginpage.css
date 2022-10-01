@@ -65,7 +65,7 @@ form {
     position: fixed;
     top: 0;
     left: 0;
-    transition: 0.3s ease-in-out;
+    transition: 1s ease-in-out;
     z-index: 8;
     display: block ;
 }
@@ -105,5 +105,4 @@ form {
 /* End : Modal */
 
 /* End : Login Page */
-
 
