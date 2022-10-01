@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import "./app.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--text-body);
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.pending-wrapper {
+    width: 50%;
+    padding: 4em;
+    margin: 4em auto;
+}
+
+/* .pending-head img {
+    width: 300px;
+} */
+
+.pending-head {
+    color: var(--warning);
+    margin-bottom: 30px;
+}
+
+.pending-body h4 {
+    font-size: var(--text-heading-xs);
+    font-weight: var(--text-semibold);
+    color: var(--neutral-900);
+    margin-bottom: 20px;
+}
+
+.pending-body p {
+    font-size: var(--text-paragraph);
+    color: var(--neutral-600);
+}
+
+.warning {
+    color: var(--warning);
+}
+
+.btn-mapel {
+    margin-top: 30px;
+    border-radius: var(--rounded-full);
+    font-weight: var(--text-medium);
+    width: 180px;
+}
