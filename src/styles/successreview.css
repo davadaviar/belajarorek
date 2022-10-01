@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import "./app.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--text-body);
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.success-wrapper {
+    width: 50%;
+    padding: 4em 8em;
+    margin: 4em auto;
+}
+
+/* .pending-head img {
+    width: 300px;
+} */
+
+.success-head {
+    color: var(--success);
+    margin-bottom: 30px;
+}
+
+.success-body h4 {
+    font-size: var(--text-heading-xs);
+    font-weight: var(--text-semibold);
+    color: var(--neutral-900);
+    margin-bottom: 20px;
+}
+
+.success-body p {
+    font-size: var(--text-paragraph);
+    color: var(--neutral-600);
+}
+
+.success {
+    color: var(--success);
+}
+
+.grade h3 {
+    font-weight: var(--text-semibold);
+    color: var(--neutral-900);
+}
+
+.btn-mapel {
+    margin-top: 30px;
+    border-radius: var(--rounded-full);
+    font-weight: var(--text-medium);
+    width: 180px;
+}
