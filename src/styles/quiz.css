@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import "./app.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--text-body);
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.quiz-container {
+    padding: 4em;
+}
+
+.instruction-wrapper {
+    padding: 1em 2em;
+    background-color: var(--primary-color);
+    color: var(--neutral-200);
+    border-radius: var(--rounded-m);
+}
+
+
+.divider {
+    color: var(--neutral-200);
+}
+
+.instruction-head {
+    display: flex;
+    gap: 15px;
+}
+
+.instruction-head > h4 {
+    font-size: var(--text-heading-xs);
+    font-weight: var(--text-semibold);
+    margin: 0;
+}
+
+.instruction-body ul {
+    padding: 0 2em;
+    margin: 10px;
+}
+
+.instruction-body li {
+    font-size: var(--text-paragraph);
+    margin: 0;
+}
+
+.quiz-wrapper {
+    display: flex;
+}
+
+.quiz {
+    background-color: white;
+    width: 60%;
+    padding: 1em;
+    border-radius: var(--rounded-s);
+}
+
+.quiz > hr {
+    color: var(--neutral-500);
+}
+
+.quiz-head {
+    display: flex;
+}
+
+.page > p {
+    margin: 0;
+    color: var(--primary-color);
+    font-weight: var(--text-semibold);
+}
+
+.question > p {
+    font-size: var(--text-paragraph);
+    font-weight: var(--text-semibold);
+    color: var(--neutral-900);
+}
+
+.options ul {
+    padding: 0;
+}
+
+.options ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    color: var(--neutral-600);
+}
+
+.options li {
+    border: 1px solid var(--neutral-400);
+    padding: 8px;
+    font-weight: var(--text-semibold);
+    border-radius: var(--rounded-2xs);
+    cursor: pointer;
+}
+
+.options li:hover {
+    background-color: var(--neutral-200);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.pagination {
+    display: flex;
+}
+
+.grade {
+    width: 35%;
+    padding: 4em 1em;
+    background-color: white;
+    border-radius: var(--rounded-s);
+}
+
+.score-detail > p {
+    font-size: var(--text-paragraph);
+    color: var(--neutral-600);
+}
+
+.score {
+    font-size: var(--text-heading-2xl);
+}
+
+.quiz-status {
+    padding: 10px 20px;
+    border:2px solid var(--danger);
+    width: 200px;
+    margin: 3em auto;
+    border-radius: var(--rounded-xs);
+    background-color: #FFE6E6;
+    opacity: 0.8;
+}
+
+.quiz-status > p {
+    margin: 0;
+    font-size: var(--text-paragraph);
+    font-weight: var(--text-semibold);
+    color: var(--danger);
+}
+
