@@ -52,6 +52,7 @@ body {
 .quiz-wrapper {
     display: flex;
     flex-direction: row-reverse;
+    padding: 4em;
 }
 
 .quiz {
@@ -75,23 +76,20 @@ body {
     font-weight: var(--text-semibold);
 }
 
-.question > p {
+.question-container p {
     font-size: var(--text-paragraph);
     font-weight: var(--text-semibold);
     color: var(--neutral-900);
 }
 
-.options ul {
+.options {
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.options ul li {
-    list-style: none;
-    margin-bottom: 10px;
-    color: var(--neutral-600);
-}
-
-.options li {
+.answer {
     border: 1px solid var(--neutral-400);
     padding: 8px;
     font-weight: var(--text-semibold);
@@ -99,7 +97,7 @@ body {
     cursor: pointer;
 }
 
-.options li:hover {
+.answer:hover {
     background-color: var(--neutral-200);
     cursor: pointer;
     transition: all 0.4s ease;
@@ -134,4 +132,6 @@ body {
 
 .number:hover {
     cursor: pointer;
+    background-color: var(--neutral-300);
+    transition: all 0.4s ease;
 }

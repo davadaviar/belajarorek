@@ -12,7 +12,7 @@
 <body>
 
     <!-- Start : Quiz Page -->
-    <div class="quiz-container">
+    <!-- <div class="quiz-container">
         <div class="instruction-wrapper shadow">
             <div class="instruction-head align-items-center">
                 <i class="fa fa fa-exclamation-circle fa-2x warn-icon"></i>
@@ -27,7 +27,9 @@
                     <li>Jika nilai di bawah nilai syarat tidak dapat meneruskan ke halaman selanjutnya</li>
                 </ul>
             </div>
-        </div>
+        </div> -->
+
+
         <div class="quiz-wrapper justify-content-between mt-5">
             <div class="quiz">
                 <div class="quiz-head justify-content-between align-items-center">
@@ -38,17 +40,15 @@
                 </div>
                 <hr>
                 <div class="quiz-body">
-                    <div class="question">
+                    <div class="question-container">
                         <p class="mb-4 question">Apa perintah ketika kita ingin menginstal dhcp server pertama kali pada debian?</p>
-                        <div class="options">
-                            <ul>
-                                <li class="answer option-a">A. install isc-dhcp-server</li>
-                                <li class="answer option-b">B. $su</li>
-                                <li class="answer option-c">C. apt-get install isc-dhcp-server</li>
-                                <li class="answer option-d">D. nano /etc/network/interfaces</li>
-                                <li class="answer option-e">E. nano /etc/init.d/networking restart</li>
-                            </ul>
-                        </div>
+                        <!-- <div class="options">
+                            <div class="answer option-a">A.instal isc-dhcp-server</div>
+                            <div class="answer option-b">B. $su</div>
+                            <div class="answer option-c">C. apt-get install isc-dhcp-server</div>
+                            <div class="answer option-d">D. nano /etc/network/interfaces</div>
+                            <div class="answer option-e">E. nano /etc/init.d/networking restart</div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -67,6 +67,7 @@
     
     <script src="src/library/jquery/jquery-3.6.0.min.js"></script>
     <script src="src/library/bootstrap/js/bootstrap.js"></script>
+    <script src="src/scripts/data/quizDhcp.js"></script>
     <script src="src/scripts/quiznext.js"></script>
 </body>
 </html>
