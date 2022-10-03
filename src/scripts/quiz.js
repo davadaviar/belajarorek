@@ -63,7 +63,6 @@ function nextQuiz() {
                 const quizStatus = document.querySelector(".quiz-status");
                 quizStatus.style.border = "2px solid var(--success)";
                 quizStatus.style.backgroundColor = "#B0EACD";
-                quizStatus.style.color = "var(--success)";
                 quizStatus.innerHTML = "<p>Lulus</p>"
             }
         })
