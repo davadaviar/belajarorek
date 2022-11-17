@@ -2,12 +2,16 @@ const numbers = document.querySelectorAll(".number");
 
 for (let number = 0; number < numbers.length; number++) {
     const element = numbers[number];
-    
+
     element.addEventListener("click", changeQuiz);
 
-    function changeQuiz(element, index) {
+    function changeQuiz(element, index = 3) {
 
         if (element.target === numbers[index]) {
+
+            const page = document.querySelector(".page");
+            page.innerHTML = `<p>${quiz[index].number} of ${quiz.length}</p>`
+
             const quiz1 = document.querySelector(".question");
             quiz1.innerHTML = `<p>${quiz[index].question}</p>`;
 
@@ -50,5 +54,3 @@ for (let number = 0; number < numbers.length; number++) {
         } 
     }
 }
-
-console.log(numbers)
