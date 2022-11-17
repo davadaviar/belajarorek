@@ -45,7 +45,7 @@ body {
 }
 
 .instruction-body li {
-    font-size: var(--text-paragraph);
+    font-size: 16px;
     margin: 0;
 }
 
