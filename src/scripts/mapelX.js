@@ -1,5 +1,5 @@
-const mapelXi = document.getElementById("mapel__x");
+const mapelX = document.getElementById("mapel__x");
 
-mapelXi.addEventListener("click", function() {
+mapelX.addEventListener("click", function() {
     window.location.href = "mapelX.html";
 })
