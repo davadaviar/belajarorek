@@ -16,122 +16,40 @@ body {
     padding: 4em;
 }
 
-.instruction-wrapper {
-    padding: 1em 2em;
-    background-color: var(--primary-color);
-    color: var(--neutral-200);
-    border-radius: var(--rounded-m);
-}
-
-
-.divider {
-    color: var(--neutral-200);
-}
-
-.instruction-head {
-    display: flex;
-    gap: 15px;
-}
-
-.instruction-head > h4 {
-    font-size: var(--text-heading-xs);
+.quiz-container h1 {
     font-weight: var(--text-semibold);
-    margin: 0;
 }
 
-.instruction-body ul {
-    padding: 0 2em;
-    margin: 10px;
-}
-
-.instruction-body li {
+.quiz-instruction {
+    margin-top: 40px;
     font-size: var(--text-paragraph);
-    margin: 0;
+    color: var(--neutral-600);
 }
 
-.quiz-wrapper {
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 4em;
+.quiz-btn {
+    position: absolute;
+    right: 45%;
+    margin-top: 50px;
 }
 
-.quiz {
-    background-color: white;
-    width: 60%;
-    padding: 1em;
-    border-radius: var(--rounded-s);
-}
-
-.quiz > hr {
-    color: var(--neutral-500);
-}
-
-.quiz-head {
-    display: flex;
-}
-
-.page > p {
-    margin: 0;
-    color: var(--primary-color);
-    font-weight: var(--text-semibold);
-}
-
-.question-container p {
-    font-size: var(--text-paragraph);
-    font-weight: var(--text-semibold);
-    color: var(--neutral-900);
-}
-
-.options {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.answer {
-    border: 1px solid var(--neutral-400);
-    padding: 8px;
-    font-weight: var(--text-semibold);
-    border-radius: var(--rounded-2xs);
-    cursor: pointer;
-}
-
-.answer:hover {
-    background-color: var(--neutral-200);
-    cursor: pointer;
-    transition: all 0.4s ease;
-}
-
+/* Start : Pagination */
 .pagination {
     display: flex;
+    padding: 1.5em 4em;
+    background-color: var(--neutral-200);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.number-pagination {
-    width: 35%;
-    background-color: white;
+.btn-previous {
     border-radius: var(--rounded-m);
-    padding: 30px;
+    padding: 8px 15px;
 }
 
-
-.number-container {
-    display: flex;
-    gap: 15px;
+.btn-next {
+    border-radius: var(--rounded-m);
+    padding: 8px 15px;
 }
-
-.number {
-    font-size: var(--text-paragraph);
-    width: 40px;
-    padding: 6px;
-    background-color: var(--neutral-100);
-    border: 2px solid var(--neutral-500);
-    border-radius: var(--rounded-2xs);
-    color: var(--neutral-900);
-}
-
-.number:hover {
-    cursor: pointer;
-    background-color: var(--neutral-300);
-    transition: all 0.4s ease;
-}
+/* End : Pagination */
