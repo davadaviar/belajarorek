@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+h4 {
+    font-weight: var(--text-semibold);
+    margin-top: 50px;
+}
+
 /* Start : Navbar */
 
 .navbar {
