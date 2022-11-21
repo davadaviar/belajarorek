@@ -69,7 +69,11 @@
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
     overflow: hidden;
-    margin-bottom: 10em;
+    margin-bottom: 4em;
+ }
+
+ .basic-app {
+    margin-top: 5em;
  }
 
  tr {
