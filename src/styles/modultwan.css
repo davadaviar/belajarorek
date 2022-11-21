@@ -73,9 +73,13 @@ h4 {
  table {
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
-    border-radius: 8px;
     overflow: hidden;
-    margin-bottom: 10em;
+    margin-bottom: 8em;
+ }
+
+ tr {
+    border: 2px solid var(--neutral-400);
+    overflow: hidden;
  }
 
  th {
@@ -91,9 +95,10 @@ h4 {
  }
 
  td {
+    border: 2px solid var(--neutral-400);
     padding: 15px 20px;
     width: 50%;
-    font-size: var(--text-paragraph);
+    font-size: var(--text-paragraph-sm);
     color: var(--neutral-900);
  }
 
