@@ -53,36 +53,6 @@
     color: var(--text-white);
 }
 
-.profile-img {
-    width: 50px;
-    border: 2px solid var(--neutral-100);
-    border-radius: var(--rounded-full);
-}
-
-.profile-img:hover {
-    cursor: pointer;
-}
-
-.logout-acc {
-    position: absolute;
-    right: 4em;
-    top: 4.5em;
-    padding: 20px 40px;
-    background-color: var(--neutral-100);
-    border-radius: var(--rounded-2xs);
-    opacity: 0;
-}
-
-.logout-acc.active {
-    opacity: 1;
-}
-
-.logout-acc a {
-    text-decoration: none;
-    font-size: var(--text-paragraph-sm);
-    font-weight: var(--text-semibold);
-}
-
 /* End : Navbar */
 
 /* Start : Hero Section */
