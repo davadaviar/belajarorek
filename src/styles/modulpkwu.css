@@ -90,6 +90,93 @@
 
 /* End : Img-container */
 
+table {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+    overflow: hidden;
+    margin-bottom: 6em;
+ }
+
+ tr {
+    border: 2px solid var(--neutral-400);
+    overflow: hidden;
+ }
+
+ th {
+    padding: 15px 20px;
+    text-align: center;
+    background-color: var(--neutral-300);
+    font-size: var(--text-paragraph);
+ }
+
+ tbody {
+    background-color: var(--neutral-100);
+    border: 2px solid var(--neutral-100);
+ }
+
+ td {
+    border: 2px solid var(--neutral-400);
+    padding: 15px 20px;
+    width: 50%;
+    font-size: var(--text-paragraph-sm);
+    color: var(--neutral-900);
+ }
+
+ .packaging-classification td {
+    vertical-align: text-top;
+ }
+
+ .character {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 6em;
+ }
+
+ .character-item {
+    width: 40%;
+    padding: 20px;
+    border: 2px solid var(--neutral-400);
+    border-radius: 8px;
+ }
+
+ .character > .character-item > ol {
+    padding: 20px;
+    margin: 0;
+ }
+
+ .character > .character-item > ol li {
+    color: var(--neutral-600);
+ }
+
+ .packaging-exp {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    margin: 4em 0 4em 0;
+ }
+
+ .packaging-exp__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid var(--neutral-400);
+    border-radius: 8px;
+    vertical-align: text-bottom;
+ }
+
+ .packaging-exp__item p {
+    font-weight: var(--text-semibold);
+    margin-top: 30px;
+ }
+
+ .packaging-exp__item:hover {
+    cursor: pointer;
+    border: 2px solid var(--primary-color);
+    transition: all 0.5s;
+ }
+
 .note-bubble {
     text-decoration: none;
     display: flex;
