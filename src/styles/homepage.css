@@ -73,6 +73,18 @@
     opacity: 0;
 }
 
+.logout-acc ul {
+    padding: 0;
+}
+
+.logout-acc li {
+    margin: 8px 0;
+}
+
+.logout-acc ul li {
+    list-style: none;
+}
+
 .logout-acc.active {
     opacity: 1;
 }
