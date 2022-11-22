@@ -1,51 +1,51 @@
 const quizData = [
     {
-        question: "Apa perintah untuk pertama kali menginstal DHCP Server pada Debian?",
-        a: "install isc-dhcp-server",
-        b: "nano /etc/network/interfaces",
-        c: "nano /etc/init.d/networking restart",
-        d: "apt-get install isc-dhcp-server",
-        e: "nano /etc/init/networking restart",
+        question: "Jenis program di komputer yang memungkinkan Anda mengakses situs web adalah",
+        a: "Pencari Situs",
+        b: "Internet Provider",
+        c: "Web Browser",
+        d: "Google",
+        e: "Search Engine",
+        correct: "d",
+    },
+
+    {
+        question: "Urutan perintah yang digunakan untuk menyisipkan gambar / foto di dokumen Word adalah",
+        a: "Insert -> Shapes",
+        b: "Insert -> Smart Art",
+        c: "Insert -> Picture ",
+        d: "Insert -> Chart",
+        e: "Insert -> Clip Art",
+        correct: "c",
+    },
+
+    {
+        question: "Program Microsoft Excel termasuk ke dalam jenis program",
+        a: "Word processing",
+        b: "Programming",
+        c: "Database",
+        d: "Spreadsheet",
+        e: "Desktop publish",
+        correct: "d",
+    },
+
+    {
+        question: "Untuk penulisan rumus jumlah di sel B2 dengan sel C2 yang benar di bawah ini adalah",
+        a: "=Sum(B2:C2)",
+        b: "=Sum(B2…C2)",
+        c: "=Sum(B2,C2)",
+        d: "+Sum(B2…C2)",
+        e: "=Sum(B2;C2) ",
         correct: "a",
     },
 
     {
-        question: "Perintah yang ditulis ketika kita ingin masuk ke user root pada Debian adalah...",
-        a: "nano /etc/network/interfaces",
-        b: "ip a",
-        c: "$ su",
-        d: "apt-get install isc-dhcp-server",
-        e: "nano /etc/init.d/networking restart",
-        correct: "c",
-    },
-
-    {
-        question: "Perintah untuk membuat custom IP Address dan subnetmask adalah...",
-        a: "install isc-dhcp-server",
-        b: "nano /etc/network/interfaces",
-        c: "nano /etc/init.d/networking restart",
-        d: "nano /etc/dhcp/dhcpd.conf",
-        e: "nano /etc/network/interfaces",
-        correct: "e",
-    },
-
-    {
-        question: "Perintah selanjutnya setelah kita menuliskan perintah nano /etc/network/interfaces?",
-        a: "install isc-dhcp-server",
-        b: "nano /etc/network/interface",
-        c: "nano /etc/init.d/networking restart",
-        d: "apt-get install isc-dhcp-server",
-        e: "nano /etc/init/networking restart",
-        correct: "c",
-    },
-
-    {
-        question: "Ketika perintah nano /etc/dhcp/dhcpd.conf dituliskan yang dapat diedit dalam halaman tersebut kecuali...",
-        a: "IP Address",
-        b: "Subnetmask",
-        c: "Domain name",
-        d: "Bandwith size",
-        e: "Broadcast address",
+        question: "Aplikasi untuk membuat presentasi pada laptop/ PC adalah",
+        a: "Ms Acses",
+        b: "Ms Word",
+        c: "Ms Excel",
+        d: "Ms Power Point",
+        e: "Ms Outlock",
         correct: "d",
     }
 ];
