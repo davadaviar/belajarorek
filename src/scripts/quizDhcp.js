@@ -137,7 +137,7 @@ function nextPage() {
     <!-- Start : Pagination -->
     <div class="pagination justify-content-between">
         <a href="modul-x-ddpk-rtrwnet.html" class="btn btn-secondary btn-previous">Sebelumnya</a>
-        <a href="submission.html" class="btn btn-primary btn-next">Selanjutnya</a>
+        <a href="submission-asj.html" class="btn btn-primary btn-next">Selanjutnya</a>
     </div>
     <!-- End : Pagination -->
     
