@@ -90,8 +90,58 @@ function getSelected() {
     return answer
 };
 
+function dateBuilder(d) {
+    let months = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+
+    let date = d.getDate();
+    let month = months[d.getMonth()];
+    let year = d.getFullYear();
+
+    return `${date} ${month} ${year}`;
+}
+
 function nextPage() {
-    window.location.href = "submission.html"
+
+    document.body.innerHTML = `
+    <!-- Start : Quiz Page -->
+    <div class="instruction-container">
+        <h1>Quiz Produk Kreatif dan Kewirausahaan</h1>
+        <ul class="instruction">
+            <li>Quiz berikut berisi 5 pertanyaan</li>
+            <li>Quiz ini hanya sebagai peninjauan kembali pengetahuan anda di modul ini</li>
+            <li>Quiz ini bersifat sebagai nilai tambah dari tugas akhir anda</li>
+        </ul>
+
+        <a href="quiz-pkwu.html" class="quiz-btn btn btn-primary">Mulai Quiz</a>
+    </div>
+    <!-- End : Quiz Page -->
+    
+    <div class="grade-container">
+        <hr class="divider">
+            <table>
+                <tr>
+                    <thead>
+                        <th>Tanggal</th>
+                        <th>Perolehan</th>
+                    </thead>
+                </tr>
+                <tr class="grade-item">
+                    <tbody>
+                        <td>${dateBuilder(new Date())}</td>
+                        <td>${score}/${quizData.length}</td>
+                    </tbody>
+                </tr>
+            </table>
+    </div>
+
+    <!-- Start : Pagination -->
+    <div class="pagination justify-content-between">
+        <a href="modul-x-ddpk-rtrwnet.html" class="btn btn-secondary btn-previous">Sebelumnya</a>
+        <a href="submission.html" class="btn btn-primary btn-next">Selanjutnya</a>
+    </div>
+    <!-- End : Pagination -->
+    
+    `
 }
 
 submitBtn.addEventListener("click", () => {
@@ -106,17 +156,9 @@ submitBtn.addEventListener("click", () => {
        if(currentQuiz < quizData.length) {
            loadQuiz()
        } else {
-
-            if (score < 4) {
-
-                quiz.innerHTML = `
-                <h4>Anda sudah menjawab ${score}/${quizData.length} dengan benar</h4>
-                <button onclick="location.reload()">Ulangi</button>   `
-            } else {
-                quiz.innerHTML = `
-                <h4>Anda sudah menjawab ${score}/${quizData.length} dengan benar</h4>
-                <button onclick="nextPage()">Selanjutnya</button>   `
-            }
+            quiz.innerHTML = `
+            <h3>Anda sudah menjawab ${score}/${quizData.length} dengan benar</h3>
+            <button onclick="nextPage()">Selesai</button>   `
        }
     }
 });
