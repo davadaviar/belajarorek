@@ -22,7 +22,7 @@ const quizData = [
     {
         question: "Perintah untuk membuat custom IP Address dan subnetmask adalah...",
         a: "install isc-dhcp-server",
-        b: "nano /etc/network/interfaces",
+        b: "nano /etc/network/init.d/interfaces",
         c: "nano /etc/init.d/networking restart",
         d: "nano /etc/dhcp/dhcpd.conf",
         e: "nano /etc/network/interfaces",
