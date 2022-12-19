@@ -15,7 +15,6 @@
    padding: 12px 50px;
    width: 100%;
    z-index: 5;
-   background-color: var(--primary-color);
 }
 
 .navbar-brand {
